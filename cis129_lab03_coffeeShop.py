@@ -25,6 +25,7 @@ def main():
     # Shows user list of items + prices
     print(f"Coffee: ${coffee_price:.2f}\nMuffin: ${muffin_price:.2f}\nCookie: ${cookie_price:.2f}\nTea: ${tea_price:.2f}\n")
 
+
     # Ask if person wants coffee
     want_coffee = input('Do you want coffee? (yes/no)\n')
     while want_coffee not in ['yes', 'no']:
@@ -32,7 +33,6 @@ def main():
         want_coffee = input('Do you want coffee? (yes/no)\n')
     if want_coffee == 'yes':
         num_coffees = int(input("How many coffee(s)?\n"))
-       
 
     # Ask if person wants muffins
     want_muffin = input("Want muffins? (yes/no)\n")
@@ -41,6 +41,7 @@ def main():
         want_muffin = input("Want muffins? (yes/no)\n")
     if want_muffin == 'yes':
         num_muffins = int(input("How many muffin(s)?\n"))
+
 
     # Ask if person wants cookies
     want_cookie = input("Want cookies? (yes/no)\n")
@@ -80,6 +81,7 @@ def main():
     print(f"Total: $ {total:.2f}")
     print("***************************************")
     print("Thank you, We hope you are satisfied!")
+
 
 # Running the function
 main()
